@@ -106,6 +106,9 @@ nav {
     letter-spacing: 4px;
 }
 
+.greyout {
+    color: gray;
+}
 
 
 
@@ -1209,9 +1212,7 @@ footer p {
         border: 0;
     }
 
-    .greyout {
-        color: gray;
-    }
+
 
     /* Site Title --- */
 
