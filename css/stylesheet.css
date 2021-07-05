@@ -1,0 +1,1609 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Krona+One&family=Roboto+Mono:wght@300;400;500;600;700&display=block');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    color: white;
+    font-size: 16px;
+}
+
+.homepage {
+    background-color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+.noChangeLink a:hover {
+    color: white;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+.home_icon_display {
+    display: none;
+}
+
+.dropDownMenu {
+    display: none;
+}
+
+/* Misc ----------------------------------------------------------- */
+
+.mobileAdd {
+   display: none;
+}
+
+/* Fonts ---------------------------------------------------------- */
+
+/* font-family: 'Jomhuria', cursive; */
+/* font-family: 'Krona One', sans-serif; */
+/* font-family: 'Roboto Mono', monospace; */
+
+.font_jomhuria {
+    font-family: 'Jomhuria';
+}
+
+.font_krona_one {
+    font-family: 'Krona One';
+}
+
+.font_Roboto_mono {
+    font-family: 'Roboto Mono';
+}
+
+
+/* Nav Bar -------------------------------------------------------- */
+nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    border-bottom: solid 1px white;
+
+}
+
+.nav-menu_sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.nav_header_links {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #48269e;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: white solid 1px;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav_header_links p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav_title {
+    padding: 10px;
+    margin: 5px;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+
+
+
+/* Main section ------------------------------------------------------------ */
+
+
+/* Grid Positioning ----------------------------------- */
+.homegrid {
+    display: grid;
+    grid-template: repeat(33, 1fr) / repeat(40, 1fr);
+    height: 2640px;
+}
+
+.banner_position {
+    grid-area: 1 / 1 / 9 / span 40;
+}
+
+.box_1_position {
+    grid-area: 12 / 1 / span 5 / span 33 ;
+}
+
+.box_2_position {
+    grid-area: 19 / 7 / span 5 / span 40 ;
+}
+
+.box_3_position {
+    grid-area: 26 / 1 / span 5 / span 33 ;
+}
+
+.author_name_position {
+    grid-area: 8 / 26 / 10 / 41 ;
+}
+
+.linkBox1_position {
+    grid-area: 15 / 30 / span 1 / span 6 ;
+}
+
+.linkBox2_position {
+    grid-area: 22 / 5 / span 1 / span 6 ;
+}
+
+.linkBox3_position {
+    grid-area: 29 / 30 / span 1 / span 6 ;
+}
+
+.footer_position {
+    grid-area: 33 / 1 / span 1 / span 40;
+}
+
+.aboutImage1_position {
+    grid-area: 13 / 2 / span 3 / span 12;
+    z-index: 6;
+}
+
+.aboutImage2_position {
+    grid-area: 20 / 27 / span 3 / span 12;
+    z-index: 6;
+}
+
+.aboutImage3_position {
+    grid-area: 27 / 2 / span 3 / span 12;
+    z-index: 6;
+}
+
+.lBT1_position {
+    grid-area: 13 / 15 / span 1 / span 10;
+    z-index: 7;
+}
+
+.lBT2_position {
+    grid-area: 20 / span 11 / span 1 / 26;
+    z-index: 7;
+}
+
+.lBT3_position {
+    grid-area: 27 / 15 / span 1 / span 10;
+    z-index: 7;
+}
+
+.lBDT1_position {
+    grid-area: 14 / 15 / span 2 / span 11;
+    z-index: 7;
+}
+
+.lBDT2_position {
+    grid-area: 21 / span 11 / span 2 / 26;
+    z-index: 7;
+}
+
+.lBDT3_position {
+    grid-area: 28 / 15 / span 2 / span 11;
+    z-index: 7;
+}
+
+
+/* Hero Banner ---------------------------------------------------------- */
+
+
+.hero_banner_image {
+    background-image: url('../images/07_nov_2020__6__generated.jpg');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 3px black ;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.hero_banner_image a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Additional Content Boxes ---------------- */
+
+.content_box_1 {
+    background-color: black;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.content_box_2 {
+    background-color: black;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+.content_box_3 {
+    background-color: black;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.box_trigger {
+    z-index: 8;
+}
+
+
+
+
+/* Author Name Box ------------------------- */
+.author_name {
+    display: grid;
+    background-color: black;
+    grid-template: repeat(10, 1fr) / repeat(30, 1fr) ;
+    z-index: 3;
+    grid-gap: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.name_text {
+    background-color: #48269e;
+    z-index: 5;
+    grid-area: 3 / 4 / span 4 / 31 ;
+    border: 2px white;
+    border-style: solid none solid solid;
+}
+
+.design1 {
+    background-color: #48269e;
+    z-index: 5;
+    grid-area: 3 / 2 / span 4 / span 2;
+    border: solid 2px white;
+}
+
+.design2 {
+    background-color: #48269e;
+    z-index: 5;
+    grid-area: 7 / 2 / span 2 / span 2 ;
+    border: solid 2px white;
+}
+
+.design3 {
+    background-color: #48269e;
+    z-index: 5;
+    grid-area: 7 / 4 / span 2 / 31;
+    border: 2px white;
+    border-style: solid none solid solid;
+}
+
+.author_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Link Boxes --------------------------- */
+
+.linkBox1 {
+    background-color: #48269e;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    z-index: 9;
+    transition: border-radius 0.5s ;
+    transition: color 0.5s;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.linkBox1:hover {
+    border: solid 1px white;
+    border-radius: 5px;
+    
+}
+
+.linkBox2 {
+    background-color: #48269e;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    z-index: 9;
+    transition: border-radius 0.5s ;
+    transition: color 0.5s;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.linkBox2:hover {
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.linkBox3 {
+    background-color: #48269e;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    z-index: 9;
+    transition: border-radius 0.5s ;
+    transition: color 0.5s;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.linkBox3:hover {
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+/* Image Boxes --------------------------- */
+
+
+.imgFit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Link Box Titles ---------------------------- */
+
+.lBT1 {
+    color: white;
+    /* background-color: coral; */
+    font-size: 3.5rem;
+}
+
+.lBT2 {
+    color: white;
+    /* background-color: coral; */
+    font-size: 3.5rem;
+    
+}
+
+.lBT3 {
+    color: white;
+    /* background-color: coral; */
+    font-size: 3.5rem;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+/* Link Box Description Text ------------------ */
+
+.lBDT1 {
+    /* background-color: coral; */
+    color: white;
+}
+
+.lBDT2 {
+    /* background-color: coral; */
+    color: white;
+}
+
+.lBDT3 {
+    /* background-color: coral; */
+    color: white;
+}
+
+ul {
+    padding-left: 30px;
+    padding-top: 20px;
+    line-height: 1.5;
+
+}
+
+.linkParaSpacing {
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+
+/* Footer --------------------------------------------------------------- */
+
+footer {
+    background-color: black;
+    /* text-align: center; */
+    display: flex;
+}
+
+footer p {
+    margin: auto auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Auxiliary Pages  (Styling for Site pages excluding Home Page) ------------*/
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+
+
+
+/* About Page ----------------------------------------------------------- */
+.bgroundcolor {
+    background-color: white;
+}
+
+.aboutgrid {
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(40, 1fr);
+    height: 1120px;
+}
+
+.about_footer_position {
+    grid-area: 14 / 1 / span 1 / span 40;
+}
+
+.black_box {
+    background-color: black;
+    grid-area: 2 / 1 / span 2 / span 35;
+    z-index: 5;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.purple_box {
+    background-color: #48269e;
+    grid-area: 1 / 1 / span 13 / span 7;
+    z-index: 4;
+}
+
+.whitetext_box {
+    /* background-color: rgb(219, 216, 216); */
+    grid-area: 4 / 8 / span 5 / span 28;
+    color: black;
+}
+
+.about_header_box {
+    color: white;
+    grid-area: 2 / 8 / span 2 / span 15;
+    z-index: 7;
+    font-size: 3rem;
+    /* border: solid 1px white; */
+    /* border-style: none none none solid; */
+    display: flex;
+    /* background-color: violet; */
+    align-items: center;
+}
+
+.about_header_box h2 {
+    margin-left: 30px;
+}
+
+.about_text {
+    font-size: 1.5rem;
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+}
+
+
+
+/* Projects Page ----------------------------------------------------------- */
+.projects_bgroundcolor {
+    background-color: white;
+}
+
+.projectsgrid {
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(40, 1fr);
+    height: 1120px;
+}
+
+.projects_footer_position {
+    grid-area: 14 / 1 / span 1 / span 40;
+}
+
+.projects_header_box {
+    color: white;
+    grid-area: 2 / 8 / span 2 / span 15;
+    z-index: 7;
+    font-size: 3rem;
+    /* border: solid 1px white; */
+    /* border-style: none none none solid; */
+    display: flex;
+    /* background-color: violet; */
+    align-items: center;
+}
+
+.projects_header_box h2 {
+    margin-left: 30px;
+}
+
+
+.projects_black_box {
+    background-color: black;
+    grid-area: 2 / 1 / span 2 / span 35;
+    z-index: 5;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.projects_purple_box {
+    background-color: #48269e;
+    grid-area: 1 / 1 / span 13 / span 7;
+    z-index: 4;
+}
+
+.projects_whitetext_box {
+    /* background-color: rgb(219, 216, 216); */
+    grid-area: 4 / 8 / span 4 / span 28;
+    color: black;
+}
+
+.projects_text {
+    font-size: 1.5rem;
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+}
+
+.projDisplayFlexbox {
+    grid-area: 8 / 8 / span 3 / span 28;
+    display: flex;
+    /* background-color: coral; */
+    justify-content: space-between;
+    min-width: 0;
+    
+}
+
+.projDisplayFlexbox img{
+    object-fit: contain;
+    height: 100%;
+
+}
+
+
+/* Contact Page ----------------------------------------------------------- */
+
+.contactgrid {
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(40, 1fr);
+    height: 1120px;
+}
+
+.contact_footer_position {
+    grid-area: 14 / 1 / span 1 / span 40;
+}
+
+.contact_header_box {
+    color: white;
+    grid-area: 2 / 8 / span 2 / span 15;
+    z-index: 7;
+    font-size: 3rem;
+    /* border: solid 1px white; */
+    /* border-style: none none none solid; */
+    display: flex;
+    /* background-color: violet; */
+    align-items: center;
+}
+
+.contact_header_box h2 {
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries------------------------------------------------------------ */
+
+
+/* 1902px Full screen size */
+/*  original height: 2640px;  */
+
+@media only screen and (max-width: 1475px) {
+
+    html {
+        font-size: 14px;
+    }
+    
+    .homegrid {
+        height: 2047px;
+    }
+
+    .aboutgrid, .projectsgrid, .contactgrid {
+        height: 1120px;
+    }
+    
+    .linkBox1 {
+        font-size: 1.8rem;
+        
+    }
+    
+    .linkBox2 {
+        font-size: 1.8rem;
+        
+    }
+    
+    .linkBox3 {
+        font-size: 1.8rem;
+        
+    }
+
+    .projDisplayFlexbox img {
+        height: 85%;
+     }
+
+}
+
+
+
+@media only screen and (max-width: 1210px) {
+
+    html {
+        font-size: 12px;
+    }
+    
+    .homegrid {
+        height: 1680px;
+    }
+    
+    .author_name {
+        grid-gap: 9px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    /* .aboutgrid, .projectsgrid, .contactgrid {
+        height: 682px;
+    } */
+
+    .projDisplayFlexbox img {
+       height: 75%;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+
+    .homegrid {
+        height: 2047px;
+    }
+
+    .aboutgrid, .projectsgrid, .contactgrid {
+        height: 1440px;
+        grid-template: repeat(18, 1fr) / repeat(40, 1fr);
+    }
+
+    .about_footer_position {
+        grid-area: 18 / 1 / span 1 / span 40;
+    }
+
+    .projects_footer_position {
+        grid-area: 18 / 1 / span 1 / span 40;
+    }
+
+    .contact_footer_position {
+        grid-area: 18 / 1 / span 1 / span 40;
+    }
+    
+    .purple_box {
+        background-color: #48269e;
+        grid-area: 1 / 1 / span 17 / span 7;
+        z-index: 4;
+    }
+
+    .projects_purple_box {
+        background-color: #48269e;
+        grid-area: 1 / 1 / span 17 / span 7;
+        z-index: 4;
+    }
+
+    .projDisplayFlexbox img {
+        height: 70%;
+     }
+
+}
+
+
+@media only screen and (max-width: 1005px) {
+
+    html {
+        font-size: 11px;
+    }
+    
+    .homegrid {
+        height: 1394px;
+    }
+    
+    .author_name {
+        grid-gap: 8px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .nav_header_links {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .projDisplayFlexbox img {
+        height: 65%;
+     }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 930px) {
+
+    html {
+        font-size: 10px;
+    }
+    
+    .homegrid {
+        height: 1290px;
+    }
+    
+    .author_name {
+        grid-gap: 7px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .projDisplayFlexbox img {
+        height: 59%;
+     }
+
+     .nav_header_links {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 840px) {
+
+    html {
+        font-size: 9px;
+    }
+    
+    .homegrid {
+        height: 1166px;
+    }
+
+    .author_name {
+        grid-gap: 6px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .projDisplayFlexbox img {
+        height: 53%;
+     }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    html {
+        font-size: 8px;
+    }
+    
+    .homegrid {
+        height: 1041px;
+    }
+
+    .author_name {
+        grid-gap: 6px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .projDisplayFlexbox img {
+        height: 45%;
+     }
+
+     .nav_header_links {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    html {
+        font-size: 8px;
+    }
+    
+    .homegrid {
+        height: 1041px;
+    }
+
+    .author_name {
+        grid-gap: 5px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .author_name_position {
+        grid-area: 8 / 20 / 10 / 41 ;
+    }
+
+    .hideli {
+        display: none;
+    }
+
+    .projDisplayFlexbox img {
+        height: 42%;
+     }
+
+
+
+    
+    .name_text {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 3 / 4 / span 4 / 31 ;
+        border: 2px white;
+        border-style: solid none solid solid;
+    }
+    
+    .design1 {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 3 / 2 / span 4 / span 2;
+        border: solid 2px white;
+    }
+    
+    .design2 {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 7 / 2 / span 2 / span 2 ;
+        border: solid 2px white;
+    }
+    
+    .design3 {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 7 / 4 / span 2 / 31;
+        border: 2px white;
+        border-style: solid none solid solid;
+    }
+    
+    .author_text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkBox1_position {
+        grid-area: 15 / 28 / span 1 / span 8 ;
+    }
+    
+    .linkBox2_position {
+        grid-area: 22 / 3 / span 1 / span 8 ;
+    }
+    
+    .linkBox3_position {
+        grid-area: 29 / 28 / span 1 / span 8 ;
+    }
+
+
+     .nav_header_links {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Switch to Mobile layout at this point --------------------------------- */
+@media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .author_name {
+        grid-gap: 6px;
+        border-radius: 3px 0px 0px 3px;
+    }
+
+    .mobileRemove {
+        display: none;
+    }
+
+    .mobileAdd {
+        display: block;
+        font-size: 1rem;
+    }
+
+
+    
+    /* Hero Banner ------------------------ */
+
+    .mobile_title_bg {
+        background-color: black;
+        opacity: .6;
+        grid-area: 3 / 1 / span 3 / span 40;
+        z-index: 3;
+    }
+
+    .mobile_title {
+        color: white;
+        grid-area: 4 / 1 / span 1 / span 40;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+
+
+
+
+    /* Nav Bar ------------------------ */
+
+    nav {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px white;
+    }
+
+    .homePage_icon_spacing {
+        justify-content: flex-end;
+    }
+
+    .auxPage_icon_spacing {
+        justify-content: space-between;
+    }
+
+    .navDisplay {
+        display: none;
+    }
+
+    .desktop_title {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: block;
+        font-size: 3.5rem;
+        padding: 7px;
+        color: white;
+    }
+
+    .home_button_style {
+        display: block;
+        font-size: 3rem;
+        padding: 7px;
+        color: white;
+    }
+
+    .home_icon_display {
+        display: block;
+    }
+
+    .hamburger_menu:hover {
+        /* color: rgba(255, 255, 255, 0.3) */
+        cursor: pointer;
+    }
+
+    .dropDownMenu {
+        background-color: black;
+        border-bottom: solid 1px white;
+    }
+
+    .dropDownMenu p {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .dropDownMenu p:hover {
+        /* background-image: radial-gradient(closest-side, gray 0%, black 70%); */
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .dropDownMenu hr {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        background-image: linear-gradient(to right, transparent, #CCC, transparent);
+        height: 1px;
+        border: 0;
+    }
+
+    .greyout {
+        color: gray;
+    }
+
+    /* Site Title --- */
+
+
+
+
+
+    /* Author Boxes --- */
+
+    .author_name {
+        display: grid;
+        background-color: black;
+        grid-template: repeat(10, 1fr) / repeat(30, 1fr) ;
+        z-index: 3;
+        grid-gap: 10px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    
+    .name_text {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 3 / 4 / span 4 / 31 ;
+        border: 2px white;
+        border-style: solid none solid solid;
+    }
+    
+    .design1 {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 3 / 2 / span 4 / span 2;
+        border: solid 2px white;
+    }
+    
+    .design2 {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 7 / 2 / span 2 / span 2 ;
+        border: solid 2px white;
+    }
+    
+    .design3 {
+        background-color: #48269e;
+        z-index: 5;
+        grid-area: 7 / 4 / span 2 / 31;
+        border: 2px white;
+        border-style: solid none solid solid;
+    }
+
+
+
+    /* Additional Content Boxes --- */
+
+
+
+
+
+    /* Additional Content Boxes --- */
+
+
+
+
+    /* Grid Positioning ----------------------------------- */
+.homegrid {
+    display: grid;
+    grid-template: repeat(35, 1fr) / repeat(40, 1fr);
+    height: 2800px;
+}
+
+.banner_position {
+    grid-area: 1 / 1 / 9 / span 40;
+}
+
+
+
+
+.box_1_position {
+    grid-area: 12 / 1 / span 6 / span 40 ;
+    border-radius: 0;
+}
+
+.box_2_position {
+    grid-area: 20 / 1 / span 6 / span 40 ;
+    border-radius: 0;
+}
+
+.box_3_position {
+    grid-area: 28 / 1 / span 6 / span 40 ;
+    border-radius: 0;
+}
+
+
+
+
+.author_name_position {
+    grid-area: 8 / 1 / 10 / 41 ;
+}
+
+
+
+
+.linkBox1_position {
+    grid-area: 17 / 11 / span 1 / span 20 ;
+    /* background-color: coral; */
+    border-radius: 5px;
+}
+
+.linkBox2_position {
+    grid-area: 25 / 11 / span 1 / span 20 ;
+    border-radius: 5px;
+}
+
+.linkBox3_position {
+    grid-area: 33 / 11 / span 1 / span 20 ;
+    border-radius: 5px;
+}
+
+
+
+
+.footer_position {
+    grid-area: 35 / 1 / span 1 / span 40;
+}
+
+
+
+.aboutImage1_position {
+    grid-area: 11 / 4 / span 3 / span 34;
+    z-index: 6;
+    border: solid 1px black;
+}
+
+.aboutImage2_position {
+    grid-area: 19 / 4 / span 3 / span 34;
+    z-index: 6;
+    border: solid 1px black;
+}
+
+.aboutImage3_position {
+    grid-area: 27 / 4 / span 3 / span 34;
+    z-index: 6;
+    border: solid 1px black;
+}
+
+.lBT1_position {
+    grid-area: 13 / 4 / span 1 / span 34;
+    z-index: 7;
+    /* background-color: crimson; */
+    margin: auto;
+}
+
+.lBT2_position {
+    grid-area: 21 / 4 / span 1 / 34;
+    z-index: 7;
+    margin: auto;
+    color: black;
+}
+
+.lBT3_position {
+    grid-area: 29 / 4 / span 1 / span 34;
+    z-index: 7;
+    color: black;
+    margin: auto;
+}
+
+.lBDT1_position {
+    grid-area: 14 / 7 / span 2 / span 28;
+    z-index: 7;
+    /* background-color: blue; */
+}
+
+.hideli {
+    display: block;
+}
+
+.lBDT2_position {
+    grid-area: 22 / 7 / span 2 / span 28;
+    z-index: 7;
+    /* background-color: blue; */
+}
+
+.lBDT3_position {
+    grid-area: 30 / 7 / span 2 / span 28;
+    z-index: 7;
+    /* background-color: blue; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Auxiliary Pages  (Styling for Site pages excluding Home Page) ------------*/
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+
+
+
+/* About Page ----------------------------------------------------------- */
+.bgroundcolor {
+    background-color: white;
+}
+
+.aboutgrid {
+    display: grid;
+    grid-template: repeat(11, 1fr) / repeat(40, 1fr);
+    height: 880px;
+}
+
+.about_footer_position {
+    grid-area: 11 / 1 / span 1 / span 40;
+}
+
+.black_box {
+    background-color: black;
+    grid-area: 2 / 1 / span 2 / span 35;
+    z-index: 5;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.purple_box {
+    background-color: #48269e;
+    grid-area: 1 / 1 / span 10 / span 7;
+    z-index: 4;
+}
+
+.whitetext_box {
+    /* background-color: rgb(219, 216, 216); */
+    grid-area: 4 / 8 / span 5 / span 28;
+    color: black;
+}
+
+.about_header_box {
+    color: white;
+    grid-area: 2 / 8 / span 2 / span 25;
+    font-size: 1.5rem;
+}
+
+.about_header_box h2 {
+    margin-left: 30px;
+    /* background-color: blueviolet; */
+}
+
+.about_text {
+    font-size: 1rem;
+}
+
+
+
+/* Projects Page ----------------------------------------------------------- */
+.projects_bgroundcolor {
+    background-color: white;
+}
+
+.projectsgrid {
+    display: grid;
+    grid-template: repeat(19, 1fr) / repeat(40, 1fr);
+    height: 1520px;
+}
+
+.projects_footer_position {
+    grid-area: 19 / 1 / span 1 / span 40;
+}
+
+.projects_header_box {
+    color: white;
+    grid-area: 2 / 8 / span 2 / span 25;
+    z-index: 7;
+    font-size: 1.5rem;
+    /* border: solid 1px white; */
+    /* border-style: none none none solid; */
+    display: flex;
+    /* background-color: violet; */
+    align-items: center;
+}
+
+.projects_header_box h2 {
+    margin-left: 30px;
+}
+
+
+.projects_black_box {
+    background-color: black;
+    grid-area: 2 / 1 / span 2 / span 35;
+    z-index: 5;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.projects_purple_box {
+    background-color: #48269e;
+    grid-area: 1 / 1 / span 18 / span 7;
+    z-index: 4;
+}
+
+.projects_whitetext_box {
+    /* background-color: rgb(219, 216, 216); */
+    grid-area: 4 / 8 / span 4 / span 28;
+    color: black;
+}
+
+.projects_text {
+    font-size: 1rem;
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+}
+
+.projDisplayFlexbox {
+    grid-area: 7 / 8 / span 12 / span 28;
+    display: flex;
+    flex-direction: column;
+    /* background-color: coral; */
+    justify-content: space-between;
+    
+}
+
+.projDisplayFlexbox img{
+    object-fit: contain;
+    height: 220px;
+}
+
+
+/* Contact Page ----------------------------------------------------------- */
+
+.contactgrid {
+    display: grid;
+    grid-template: repeat(11, 1fr) / repeat(40, 1fr);
+    height: 880px;
+}
+
+.contact_footer_position {
+    grid-area: 11 / 1 / span 1 / span 40;
+}
+
+.contact_header_box {
+    color: white;
+    grid-area: 2 / 8 / span 2 / span 25;
+    z-index: 7;
+    font-size: 1.5rem;
+    /* border: solid 1px white; */
+    /* border-style: none none none solid; */
+    display: flex;
+    /* background-color: violet; */
+    align-items: center;
+}
+
+.contact_header_box h2 {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.smallEmail {
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
